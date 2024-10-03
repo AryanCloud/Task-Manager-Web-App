@@ -1,0 +1,71 @@
+li {
+    background-color: #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /* Space between title and buttons */
+    align-items: center;
+    border-left: 5px solid transparent;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    color: #777;
+  }
+  
+  li.High {
+    border-left-color: #d9534f;
+  }
+  
+  li.Medium {
+    border-left-color: #f0ad4e;
+  }
+  
+  li.Low {
+    border-left-color: #5bc0de;
+  }
+  
+  /* Ensure the task title wraps properly */
+  li span {
+    flex: 1; /* Takes up available space */
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-right: 10px; /* Add some space between title and buttons */
+  }
+  
+  /* Style the buttons */
+  li button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between buttons */
+  }
+  
+  li button.complete-btn:hover {
+    background-color: #28a745;
+  }
+  
+  li button.delete-btn:hover {
+    background-color: #dc3545;
+  }
+
+  
+  /* Default style for the tick button */
+.complete-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Style for completed task tick button */
+.completed .complete-btn {
+    background-color: #999; /* Gray color for completed tasks */
+    color: #fff;
+    cursor: not-allowed; /* Change cursor to indicate it's not clickable */
+}
